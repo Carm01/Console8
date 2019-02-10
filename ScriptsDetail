@@ -1,0 +1,18 @@
+The ‘Console8-Fullsetup_install.exe’ ( not included here but a combination of the full vendor install and the installer(INstaller.au3) will take care of Console 8 installation as well as setting up the script that handles what is
+described below
+
+The modified shortcut points to a script that kills all
+office programs, IE, Firefox, Chrome, then launched Console 8, followed by a 1
+second delay then launches C8Check.exe which will remain as long as Console 8
+is running. This script is located C:\ProgramData\certiport\Console-8.exe
+
+C8Check.exe will run or be launched in the system tray after
+console 8 is launched.
+
+This will constantly check and make sure the service
+msiserver and the msiexec.exe is never running while console 8 is active. Once
+Console 8 closes it will activate the service again and the script will exit
+until next time someone double click the modified shortcut. That script is
+located C:\ProgramData\certiport\. per the installer. 
+
+You can choose tp point the scripts elsewhere but make sure the change is made in all three scripts so nothing is pointing to wrong directories.
